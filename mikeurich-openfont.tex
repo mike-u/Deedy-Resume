@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Michael}{Urich}{ \urlstyle{same} \\
+\href{mailto:mpu2@pitt.edu}{mpu2@pitt.edu} | 412.303.8722}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Pittsburgh}
+\descript{BEng in Electrical Engineering}
+\location{Expected Dec 2017 | Pittsburgh, PA}
+Conc. in Communications/Signal Processing \\
+Swanson School of Engineering \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github: \href{https://github.com/mike-u}{\custombold{mike-u}} \\
+LinkedIn:  \href{https://www.linkedin.com/in/mikeurich}{\custombold{mikeurich}} \\
+Devpost:  \href{http://devpost.com/MikeUrich}{\custombold{mikeurich}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+Analog Communication Systems \\
+Quantitative Systems Neuroscience \\
+Analysis and Design of Electronic Circuits \\
+Signals and Systems Analysis \\
+Music Engineering
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Computing}
+Matlab \textbullet{} Python \textbullet{} HTML/JS \\
+VHDL\textbullet{} Arduino \textbullet{} Java \\
+Git \textbullet{} Linux \textbullet{} \LaTeX 
+\sectionsep
+
+\subsection{Design}
+SolidWorks \textbullet{} Altera Quartus \\
+Autodesk Inventor \textbullet{} GIMP
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Hackathons
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hackathons}
+
+\location{PennApps \textrm{(Sep 2016)}}
+
+\location{Steelhacks \textrm{(Feb 2016)}}
+
+\location{PittApps \textrm{(Jan 2016)}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Organized for approx 40 students who could not attend PennApps due to weather
+\end{tightemize}
+
+\location{MHacks \textrm{(Jan 2015)}}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Laboratory for Computational Neuroscience} \\
+\descript{Undergraduate Research Assistant}
+\location{Mar 2016 – Present | Pittsburgh, PA}
+Working under supervision of \textbf{\href{http://www.pitt.edu/~zhm4/}{Dr. Zhi-Hong Mao}} to develop a system for detecting eye saccades and blinks through a wearable EEG headset to create an eye-tracking keyboard, which will allow paraplegic patients to communicate without custom modifications to consumer devices. Independently developed support vector machine in Matlab for saccade direction recognition. Publication to be submitted.
+\sectionsep
+
+\runsubsection{Pitt Neurobiology Department} \\
+\descript{Undergraduate Research Assistant}
+\location{Mar 2015 – Sep 2015 | Pittsburgh, PA}
+Worked with \textbf{\href{http://hookslab.neurobio.pitt.edu/}{Dr. Bryan Hooks}} with Matlab and ImageJ to develop a novel method of quantifying neuronal connectivity in the motor and sensory cortices of the mouse brain. Publication accepted to BMES 2015 Annual Meeting.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Design Hub}
+\descript{| Webmaster, Club officer}
+\location{Jan 2015 – present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Worked with team of undergraduates to develop \textbf{\href{http://pittdesignhub.com}{Design Hub site}}
+\item Part of core group of undergraduates planning workshops and coordinating design teams
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dynastim} \\
+\location{Jan 2014 – May 2015}
+\begin{tightemize}\item Worked with a team of undergraduates and doctors on an
+electrophysiology control device for deep brain stimulation
+\item Competed in several design and entrepreneurial competitions, progressed to final round of Randall Family Big Idea competition
+\item Applied for provisional patent
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ThereminD} \\
+\location{Steelhacks project}
+\begin{tightemize}\item Worked with friends to develop \textbf{\href{http://devpost.com/software/theremind}{ThereminD}}, an EEG headband that plays music based on brain signals with theremin-style controls. Used Muse headband integrated wtih Matlab for data acquisition as well as signal processing.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015         & First place at Senior Design Expo, Dynastim project\\
+2014	     & First place at Senior Design Expo, Dynastim project\\
+2014	     & BK Simon Family Scholar
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
